@@ -1,2 +1,2 @@
-# python_intro_codes
-Exercise: Communicate using Markdown
+-- This repo will be created for basic functions and input exerces
+-- A (readme) file is a description of the repo or README
