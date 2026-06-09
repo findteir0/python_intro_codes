@@ -1,0 +1,50 @@
+class Football_player:
+    def __init__(self,first,last,position,grade,weight):
+        self.first = first
+        self.last = last 
+        self.position = position 
+        self.grade = grade 
+        self.weight = weight
+        
+          
+          
+  
+    def weight_check(self):
+        
+        print("Player weight is " +str(self.weight))
+      
+       
+        if self.weight < 200:
+          print(self.first + " is  underweight :(")
+        else:
+          print(self.first+ " is on weight :)")
+    
+        goal_weight = self.weight * .08 + self.weight
+        print("Goal Weight is set at " +str(goal_weight)+ " lBs")
+      
+    
+    def group(self):
+        skills = ["WR","DB""QB"]
+        mids = ["TE","LB","RB"]
+        bigs = ["OL","DL", "SP"]
+        
+        if self.position in skills:
+            print("Morning Workout: 6:00am")
+        elif self.position in mids:
+            print("Morning Workout: 8:30am")
+        elif self.position in bigs:
+            print("Mornign Workput: 10:30am")
+        else:
+            print("Lift with Injured Group")
+            
+        
+         
+         
+         
+fitz = Football_player("Fitzroy",
+"Ledgister",
+"WR",
+"Senior", 
+255)
+         
+print(fitz.group())
